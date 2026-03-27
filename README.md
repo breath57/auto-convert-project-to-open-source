@@ -1,145 +1,114 @@
-# 🚀 all-project-auto-to-opensource
+<p align="center">
+  <img src="logo.png" width="600" alt="all-project-auto-to-opensource" />
+</p>
 
-**Transform any private project into a production-ready open source project — automatically.**
+<h1 align="center">all-project-auto-to-opensource</h1>
 
-[English](README.md) | [中文](README_CN.md)
+<p align="center">
+  <b>Turn any messy codebase into a polished, production-grade project — in one shot.</b>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> | <a href="README_CN.md">中文</a>
+</p>
 
 ---
 
-> One AI skill. Any language. Any framework. From private repo to polished open source in minutes, not days.
+You have a project that works. Maybe it started as a prototype, maybe it grew organically. Now it's full of dead code, test files nobody reads, hardcoded paths, leaked credentials, and a folder structure that makes no sense.
 
-## ✨ What Makes This Different
+You want to clean it up — maybe open-source it, maybe just make it maintainable. But the gap between "it works on my machine" and "anyone can pick this up" is enormous.
 
-Most "open source checklist" tools give you a static list of things to check. This skill **actively does the work for you** through your AI coding assistant:
+**This AI Skill closes that gap automatically.**
 
-- 🔒 **Security-first** — Automatically scans and cleans secrets, API keys, internal URLs, hardcoded paths
-- 🧹 **Deep pruning** — Doesn't just remove `.DS_Store`. Goes file-by-file, function-by-function to strip internal-only code
-- 🤖 **8-phase guided workflow** — With 5 mandatory checkpoints where YOU make the decisions
-- 🌍 **Language-agnostic** — Python, Node.js, Rust, Go, Java, Ruby... if it's code, it works
-- 📊 **Never loses track** — Persistent progress bar + JSON tracking files prevent the AI from drifting
-- ✅ **Test-driven** — Every change is verified. Tests must pass before moving on
-- 📝 **README last** — Generates README from the *final* code, not from outdated assumptions
+## What It Actually Does
 
-## 🎯 The Problem
+Give it any project — any language, any framework — and it will:
 
-Open-sourcing a private project is tedious and error-prone:
+- **Strip what doesn't belong** — unused files, dead code, internal-only utilities, test fixtures that reference your company
+- **Find what shouldn't be public** — API keys, tokens, private IPs, employee names, hardcoded paths — across every file, including the ones you forgot about
+- **Restructure to industry standards** — proper directory layout, clean imports, sensible naming, LICENSE, CONTRIBUTING, CI config
+- **Generate documentation from the final result** — README, API docs, architecture overview — written from *what the code actually is*, not what you think it is
+- **Verify everything** — tests must pass, security scan must be clean, before anything is finalized
 
-- Did I remove all hardcoded API keys? What about that one in the test fixture?
-- Is there internal-only code hiding in a utility function somewhere?
-- Does the README actually match the final state of the code?
-- Did I forget the LICENSE file? CONTRIBUTING.md? .gitignore?
+The result: a project that looks like it was built by a disciplined team from day one.
 
-**This skill handles all of it** — systematically, thoroughly, with human checkpoints for every critical decision.
+## Who Is This For
 
-## 📦 Installation
+| Scenario | What You Get |
+|----------|-------------|
+| **"I want to open-source my side project"** | Secrets removed, code pruned, README generated, ready to publish |
+| **"This internal tool is a mess"** | Dead code gone, structure normalized, maintainability up |
+| **"I inherited a codebase"** | Understand what matters, strip what doesn't, get a clean starting point |
+| **"My demo needs to become a real product"** | From prototype chaos to production structure in minutes |
+
+## Installation
 
 ```bash
 npx skills add breath57/all-project-auto-to-opensource/skills/en
 ```
 
-## 🔄 How It Works
+## How It Works
+
+The skill runs an 8-phase workflow with 5 mandatory checkpoints — you stay in control of every critical decision.
 
 ```mermaid
 flowchart LR
-    subgraph P01["Phase 0-1 · Analyze"]
+    subgraph A["Analyze"]
         direction TB
-        P01a["Copy project / Deep scan / Find secrets"]
-        P01s["🛑 STOP"]
-        P01a --> P01s
+        A1["Copy project\nDeep scan\nFind secrets"]
+        A2["🛑 You review findings"]
+        A1 --> A2
     end
-    subgraph P23["Phase 2-3 · Plan"]
+    subgraph B["Plan"]
         direction TB
-        P23a["Choose L1·L2·L3 / Name repo / Confirm plan"]
-        P23s["🛑 STOP"]
-        P23a --> P23s
+        B1["Choose quality level\nName the project\nBuild refactor plan"]
+        B2["🛑 You approve the plan"]
+        B1 --> B2
     end
-    subgraph P45["Phase 4-5 · Execute"]
+    subgraph C["Execute"]
         direction TB
-        P45a["Security / Pruning / Cleanup / Docs + CI"]
-        P45s["🛑 STOP"]
-        P45a --> P45s
+        C1["Security cleanup\nDeep pruning\nCode restructuring\nDocs & CI"]
+        C2["🛑 You decide edge cases"]
+        C1 --> C2
     end
-    subgraph P68["Phase 6-8 · Verify"]
+    subgraph D["Verify"]
         direction TB
-        P68a["Run tests / Final scan / README / Git init"]
-        P68s["🛑 STOP"]
-        P68a --> P68s
+        D1["Run tests\nFinal security scan\nGenerate README\nInit git"]
+        D2["🛑 You confirm result"]
+        D1 --> D2
     end
-    P01 --> P23 --> P45 --> P68
+    A --> B --> C --> D
 ```
 
-### 3 Target Levels
+### 3 Quality Levels
 
-| Level | What You Get | Best For |
-|-------|-------------|----------|
+| Level | Scope | Best For |
+|-------|-------|----------|
 | **L1 Basic** | Security cleanup + LICENSE + README + .gitignore | Quick release, internal tools |
 | **L2 Standard** | L1 + code cleanup + tests + CI + CONTRIBUTING | Most projects |
 | **L3 Professional** | L2 + API docs + architecture docs + examples + badges | Libraries, frameworks |
 
-### 5 Mandatory Checkpoints
+### What the AI Never Does Without You
 
-The AI **never** makes critical decisions for you. At each 🛑 STOP point, it presents findings and waits for your confirmation:
+At every checkpoint, the AI stops and waits:
 
-1. **Analysis Report** — Review what was found before proceeding
-2. **Level & Name** — Choose target level and project name
-3. **Refactor Plan** — Approve the detailed plan before execution
-4. **Uncertain Items** — Decide what to keep/remove for unclear files
-5. **Test Results** — Verify everything passes before README generation
+1. **Analysis** — shows what it found (secrets, dead code, internal references). You decide what's real.
+2. **Level & naming** — you pick L1/L2/L3 and the project name.
+3. **Refactor plan** — you see exactly what will change before it happens.
+4. **Edge cases** — files it's unsure about? You decide keep or remove.
+5. **Final review** — tests pass, scan is clean, you confirm before it writes the README.
 
-## 📁 Skill Structure
+## Security
 
-In this repository, this skill lives under `skills/en/all-project-auto-to-opensource/`:
+- Multi-layer secret scanning — API keys, tokens, passwords, connection strings, cloud credentials, PEM certificates
+- Internal reference detection — corporate URLs, private IPs, hardcoded paths, employee names
+- .gitignore-aware — won't delete files already protected
+- Double verification — full security scan runs again after all changes
 
-```mermaid
-flowchart TB
-    root(["all-project-auto-to-opensource/"])
-    root --> md["SKILL.md · workflow and rules"]
-    root --> refs(["references/"])
-    root --> scr(["scripts/"])
-    refs --> r1["anti-drift · progress anchor"]
-    refs --> r2["cleanup-checklist"]
-    refs --> r3["deep-pruning"]
-    refs --> r4["project-standards"]
-    refs --> r5["sensitive-patterns"]
-    refs --> r6["tracking-templates"]
-    scr --> s1["copy-project"]
-    scr --> s2["scan-secrets"]
-    scr --> s3["init-tracking"]
-```
+## Contributing
 
-## 🚀 Quick Start
+Issues, improvements, and feature requests are welcome.
 
-1. **Install the skill:**
-   ```bash
-   npx skills add breath57/all-project-auto-to-opensource/skills/en
-   ```
+## License
 
-2. **Tell your AI assistant:** e.g. “open source this project”, “prepare for open source” (see triggers in `SKILL.md`).
-
-3. **Follow the guided workflow** — The AI will:
-   - Copy your project (never modifies originals)
-   - Deep-scan for secrets, internal code, dead code
-   - Present findings and wait for your decisions
-   - Execute the approved plan with continuous testing
-   - Generate a polished README based on the final result
-
-## 🛡️ Security Features
-
-- **Multi-layer secret scanning** — API keys, tokens, passwords, connection strings, cloud provider keys, PEM certificates
-- **Internal reference detection** — Corporate URLs, private IPs, hardcoded paths, employee names
-- **.gitignore-aware** — Won't delete files already protected by .gitignore
-- **Double verification** — Runs security scan again after all changes, before final review
-
-## 🤝 Contributing
-
-Improvements to references and scripts, issues, and feature requests are welcome.
-
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE).
-
----
-
-<p align="center">
-  <b>Stop worrying about what you forgot to clean up. Let the skill handle it.</b>
-</p>
+MIT — see [LICENSE](LICENSE).
