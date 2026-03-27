@@ -1,12 +1,12 @@
 ---
-name: all-project-auto-to-opensource-v2
+name: all-project-auto-to-opensource
 description: >
   将任何内部/私有项目转化为生产级开源项目。
   触发词："open source", "开源", "开源化", "重构为开源项目", "prepare for open source"。
   支持任何语言、任何框架、任何项目类型。
 ---
 
-# 项目开源化 Skill（v2）
+# 项目开源化 Skill
 
 ## 📏 回复格式（硬性要求）
 

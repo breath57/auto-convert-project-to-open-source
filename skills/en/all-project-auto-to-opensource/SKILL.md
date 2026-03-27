@@ -6,7 +6,7 @@ description: >
   Supports any language, any framework, any project type.
 ---
 
-# Project Open-Sourcing Skill (v2)
+# Project Open-Sourcing Skill
 
 ## 📏 Response Format (Mandatory)
 

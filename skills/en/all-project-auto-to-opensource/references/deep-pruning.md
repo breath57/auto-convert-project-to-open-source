@@ -19,7 +19,7 @@ Review every directory and file, classify into:
 - **Internal tools/scripts**: Scripts only for internal workflows (deployment, internal CI, data migration, etc.)
 - **Experimental/draft code**: Incomplete features, poc directories, scratch files
 - **Output examples**: output/, result/, generated/ directories
-- **Duplicate files**: Multiple versions of same functionality (v1/v2/backup)
+- **Duplicate files**: Multiple versions of same functionality (e.g. old copy, backup folder)
 - **Large data files**: Test datasets, sample files, database dumps
 - **Documentation drafts**: Internal TODOs, research notes, meeting notes
 - **Docker/deployment artifacts**: Configs only for internal deployment
