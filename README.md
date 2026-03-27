@@ -88,23 +88,23 @@ The AI **never** makes critical decisions for you. At each 🛑 STOP point, it p
 
 ## 📁 Skill Structure
 
+In this repository, this skill lives under `skills/en/all-project-auto-to-opensource/`:
+
 ```mermaid
 flowchart TB
-    root(["skills/"])
-    en(["en/ · 🇬🇧 English"])
-    cn(["cn/ · 🇨🇳 Chinese"])
-    root --> en
-    root --> cn
-    pkgE["all-project-auto-to-opensource/"]
-    pkgC["all-project-auto-to-opensource/"]
-    en --> pkgE
-    cn --> pkgC
-    pkgE --> e_md["SKILL.md · main document"]
-    pkgE --> e_ref["references/ · anti-drift, cleanup-checklist, deep-pruning, project-standards, sensitive-patterns, tracking-templates"]
-    pkgE --> e_scr["scripts/ · copy-project, scan-secrets, init-tracking"]
-    pkgC --> c_md["SKILL.md"]
-    pkgC --> c_ref["references/"]
-    pkgC --> c_scr["scripts/"]
+    root(["all-project-auto-to-opensource/"])
+    root --> md["SKILL.md · workflow and rules"]
+    root --> refs(["references/"])
+    root --> scr(["scripts/"])
+    refs --> r1["anti-drift · progress anchor"]
+    refs --> r2["cleanup-checklist"]
+    refs --> r3["deep-pruning"]
+    refs --> r4["project-standards"]
+    refs --> r5["sensitive-patterns"]
+    refs --> r6["tracking-templates"]
+    scr --> s1["copy-project"]
+    scr --> s2["scan-secrets"]
+    scr --> s3["init-tracking"]
 ```
 
 ## 🚀 Quick Start
@@ -114,8 +114,7 @@ flowchart TB
    npx skills add breath57/all-project-auto-to-opensource/skills/en
    ```
 
-2. **Tell your AI assistant:**
-   > "Open source this project" / "帮我把这个项目开源"
+2. **Tell your AI assistant:** e.g. “open source this project”, “prepare for open source” (see triggers in `SKILL.md`).
 
 3. **Follow the guided workflow** — The AI will:
    - Copy your project (never modifies originals)
@@ -133,12 +132,7 @@ flowchart TB
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
-
-- Add translations for more languages
-- Improve reference documents
-- Add more language-specific templates
-- Submit issues and feature requests
+Improvements to references and scripts, issues, and feature requests are welcome.
 
 ## 📄 License
 
