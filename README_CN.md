@@ -5,7 +5,7 @@
 <h1 align="center">all-project-auto-to-opensource</h1>
 
 <p align="center">
-  <b>把任何乱糟糟的代码库一步变成高质量、可维护的项目。</b>
+  <b>把任何项目轻松变为开源级别的项目。</b>
 </p>
 
 <p align="center">

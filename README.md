@@ -5,7 +5,7 @@
 <h1 align="center">all-project-auto-to-opensource</h1>
 
 <p align="center">
-  <b>Turn any messy codebase into a polished, production-grade project — in one shot.</b>
+  <b>Elevate any project to open-source quality — without the grind.</b>
 </p>
 
 <p align="center">
