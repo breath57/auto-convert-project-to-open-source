@@ -82,7 +82,7 @@ The result: a project that looks like it was built by a disciplined team from da
 ### 1. Install
 
 ```bash
-npx skills add breath57/auto-convert-project-to-open-source/skills/en
+npx skills add breath57/auto-convert-project-to-open-source/skills/en/auto-convert-project-to-open-source
 ```
 
 ### 2. Trigger

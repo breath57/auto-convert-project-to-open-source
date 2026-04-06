@@ -82,7 +82,7 @@ flowchart LR
 ### 1. 安装
 
 ```bash
-npx skills add breath57/auto-convert-project-to-open-source/skills/cn
+npx skills add breath57/auto-convert-project-to-open-source/skills/cn/auto-convert-project-to-open-source
 ```
 
 ### 2. 触发
