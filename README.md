@@ -24,7 +24,7 @@ You want to clean it up — maybe open-source it, maybe just make it maintainabl
 
 ```mermaid
 flowchart LR
-    subgraph manual["😰 Doing It Manually"]
+    subgraph manual["😰 Conventional open-source process"]
         direction TB
         m1(["Check every file for secrets"]) --> m2(["Search for API keys / tokens"])
         m2 --> m3(["Find and remove dead code"])
@@ -41,7 +41,7 @@ flowchart LR
         m13 --> m14(["🙏 Hope nothing was missed"])
     end
 
-    subgraph skill["😎 With the Skill"]
+    subgraph skill["😎 Using this project's Skill"]
         direction TB
         s1(["💬 'Open source this project'"])
         s1 --> s2(["🤝 AI guides, you confirm"])

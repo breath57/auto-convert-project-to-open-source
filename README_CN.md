@@ -24,7 +24,7 @@
 
 ```mermaid
 flowchart LR
-    subgraph manual["😰 手动搞"]
+    subgraph manual["😰 常规的开源过程"]
         direction TB
         m1(["逐文件排查密钥"]) --> m2(["搜索 API Key / Token / 密码"])
         m2 --> m3(["找出死代码并删除"])
@@ -41,7 +41,7 @@ flowchart LR
         m13 --> m14(["🙏 祈祷没漏掉什么"])
     end
 
-    subgraph skill["😎 用 Skill"]
+    subgraph skill["😎 使用该项目的 Skill"]
         direction TB
         s1(["💬 对 AI 说：帮我开源"])
         s1 --> s2(["🤝 AI 引导，你确认"])
