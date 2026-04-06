@@ -48,6 +48,8 @@ flowchart LR
         s2 --> s3(["✅ Done. Ship it."])
     end
 
+    manual ~~~ skill
+
     style manual fill:#2d1b1b,stroke:#e74c3c,stroke-width:2px,color:#f5f5f5
     style skill fill:#1b2d1b,stroke:#2ecc71,stroke-width:2px,color:#f5f5f5
     style m14 fill:#e74c3c,color:#fff
