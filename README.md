@@ -41,62 +41,40 @@ The result: a project that looks like it was built by a disciplined team from da
 | **"I inherited a codebase"** | Understand what matters, strip what doesn't, get a clean starting point |
 | **"My demo needs to become a real product"** | From prototype chaos to production structure in minutes |
 
-## Installation
+## Installation & Usage
+
+### 1. Install
 
 ```bash
 npx skills add breath57/all-project-auto-to-opensource/skills/en
 ```
 
-## How It Works
+### 2. Trigger
 
-The skill runs an 8-phase workflow with 5 mandatory checkpoints — you stay in control of every critical decision.
+After installing, tell your AI coding assistant (e.g. Cursor) on any project:
 
-```mermaid
-flowchart LR
-    subgraph A["Analyze"]
-        direction TB
-        A1["Copy project\nDeep scan\nFind secrets"]
-        A2["🛑 You review findings"]
-        A1 --> A2
-    end
-    subgraph B["Plan"]
-        direction TB
-        B1["Choose quality level\nName the project\nBuild refactor plan"]
-        B2["🛑 You approve the plan"]
-        B1 --> B2
-    end
-    subgraph C["Execute"]
-        direction TB
-        C1["Security cleanup\nDeep pruning\nCode restructuring\nDocs & CI"]
-        C2["🛑 You decide edge cases"]
-        C1 --> C2
-    end
-    subgraph D["Verify"]
-        direction TB
-        D1["Run tests\nFinal security scan\nGenerate README\nInit git"]
-        D2["🛑 You confirm result"]
-        D1 --> D2
-    end
-    A --> B --> C --> D
-```
+> **"Open source this project"**
 
-### 3 Quality Levels
+Other triggers: `"opensource"`, `"prepare for open source"`, `"make it open source"`
 
-| Level | Scope | Best For |
-|-------|-------|----------|
-| **L1 Basic** | Security cleanup + LICENSE + README + .gitignore | Quick release, internal tools |
-| **L2 Standard** | L1 + code cleanup + tests + CI + CONTRIBUTING | Most projects |
-| **L3 Professional** | L2 + API docs + architecture docs + examples + badges | Libraries, frameworks |
+### 3. Follow the flow
 
-### What the AI Never Does Without You
+The skill starts a guided process automatically:
 
-At every checkpoint, the AI stops and waits:
+1. **Copy** — works on a copy; your original code is never touched
+2. **Scan** — finds secrets, dead code, internal references, redundant files
+3. **Ask you** — stops at every critical decision and waits for your call
+4. **Clean & restructure** — executes the plan you approved
+5. **Verify** — tests pass + security scan clean, then generates README and docs
+6. **Deliver** — you get a project with clean structure, no secrets, and complete documentation
 
-1. **Analysis** — shows what it found (secrets, dead code, internal references). You decide what's real.
-2. **Level & naming** — you pick L1/L2/L3 and the project name.
-3. **Refactor plan** — you see exactly what will change before it happens.
-4. **Edge cases** — files it's unsure about? You decide keep or remove.
-5. **Final review** — tests pass, scan is clean, you confirm before it writes the README.
+### What You End Up With
+
+- Clean code — no dead code, no internal-only logic, no abandoned files
+- Secure repo — API keys, tokens, private IPs all removed
+- Standard structure — directory layout, naming, imports follow industry conventions
+- Complete setup — LICENSE, README, .gitignore, CI, CONTRIBUTING out of the box
+- Documentation from final code — not a copy-pasted template, but docs that reflect the actual state of the code
 
 ## Security
 
