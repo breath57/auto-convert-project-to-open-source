@@ -12,3 +12,10 @@ Thumbs.db
 .process.json
 .checklist.json
 .plan.md
+
+# Local-only paths (never part of published repo history)
+docs/
+.agents/
+PROMOTION_ARTICLE.md
+PROMOTION*.md
+skills-lock.json
