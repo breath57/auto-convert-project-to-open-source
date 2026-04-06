@@ -20,6 +20,40 @@ You want to clean it up — maybe open-source it, maybe just make it maintainabl
 
 **This AI Skill closes that gap automatically.**
 
+## ⚡ The Difference
+
+```mermaid
+flowchart LR
+    subgraph manual["😰 Doing It Manually"]
+        direction TB
+        m1(["Check every file for secrets"]) --> m2(["Search for API keys / tokens"])
+        m2 --> m3(["Find and remove dead code"])
+        m3 --> m4(["Clean internal URLs & paths"])
+        m4 --> m5(["Reorganize directory structure"])
+        m5 --> m6(["Fix all import paths"])
+        m6 --> m7(["Add LICENSE"])
+        m7 --> m8(["Write .gitignore"])
+        m8 --> m9(["Write README by hand"])
+        m9 --> m10(["Set up CI/CD"])
+        m10 --> m11(["Write CONTRIBUTING"])
+        m11 --> m12(["Run tests, fix, repeat"])
+        m12 --> m13(["Scan again for leaks"])
+        m13 --> m14(["🙏 Hope nothing was missed"])
+    end
+
+    subgraph skill["😎 With the Skill"]
+        direction TB
+        s1(["💬 'Open source this project'"])
+        s1 --> s2(["🤝 AI guides, you confirm"])
+        s2 --> s3(["✅ Done. Ship it."])
+    end
+
+    style manual fill:#2d1b1b,stroke:#e74c3c,stroke-width:2px,color:#f5f5f5
+    style skill fill:#1b2d1b,stroke:#2ecc71,stroke-width:2px,color:#f5f5f5
+    style m14 fill:#e74c3c,color:#fff
+    style s3 fill:#2ecc71,color:#fff
+```
+
 ## What It Actually Does
 
 Give it any project — any language, any framework — and it will:

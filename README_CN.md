@@ -20,6 +20,40 @@
 
 **这个 AI Skill 帮你自动跨过这道鸿沟。**
 
+## ⚡ 区别在哪
+
+```mermaid
+flowchart LR
+    subgraph manual["😰 手动搞"]
+        direction TB
+        m1(["逐文件排查密钥"]) --> m2(["搜索 API Key / Token / 密码"])
+        m2 --> m3(["找出死代码并删除"])
+        m3 --> m4(["清理内部 URL、硬编码路径"])
+        m4 --> m5(["重组目录结构"])
+        m5 --> m6(["修复所有导入关系"])
+        m6 --> m7(["添加 LICENSE"])
+        m7 --> m8(["编写 .gitignore"])
+        m8 --> m9(["手写 README"])
+        m9 --> m10(["配置 CI/CD"])
+        m10 --> m11(["编写 CONTRIBUTING"])
+        m11 --> m12(["跑测试、修 bug、再跑"])
+        m12 --> m13(["再扫一遍怕遗漏"])
+        m13 --> m14(["🙏 祈祷没漏掉什么"])
+    end
+
+    subgraph skill["😎 用 Skill"]
+        direction TB
+        s1(["💬 对 AI 说：帮我开源"])
+        s1 --> s2(["🤝 AI 引导，你确认"])
+        s2 --> s3(["✅ 搞定，直接可用"])
+    end
+
+    style manual fill:#2d1b1b,stroke:#e74c3c,stroke-width:2px,color:#f5f5f5
+    style skill fill:#1b2d1b,stroke:#2ecc71,stroke-width:2px,color:#f5f5f5
+    style m14 fill:#e74c3c,color:#fff
+    style s3 fill:#2ecc71,color:#fff
+```
+
 ## 它到底做什么
 
 给它任何项目——任何语言、任何框架——它会：
