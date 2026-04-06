@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="logo.png" width="600" alt="Auto Open-Source Convert Skill" />
+  <img src="logo.png" width="600" alt="Auto-Convert Project to Open Source" />
 </p>
 
-<h1 align="center">Auto Open-Source Convert Skill</h1>
+<h1 align="center">Auto-Convert Project to Open Source</h1>
 
 <p align="center">
   <b>Automatically and easily convert any project to open-source grade.</b>
@@ -82,7 +82,7 @@ The result: a project that looks like it was built by a disciplined team from da
 ### 1. Install
 
 ```bash
-npx skills add breath57/all-project-auto-to-opensource/skills/en
+npx skills add breath57/auto-convert-project-to-open-source/skills/en
 ```
 
 ### 2. Trigger

@@ -1,12 +1,12 @@
 ---
-name: all-project-auto-to-opensource
+name: auto-convert-project-to-open-source
 description: >
-  Transform any internal/private project into a production-ready open source project.
+  Auto-convert any internal/private project into a production-ready open source project.
   Triggers: "open source", "opensource", "prepare for open source", "make it open source".
   Supports any language, any framework, any project type.
 ---
 
-# Project Open-Sourcing Skill
+# Auto-Convert Project to Open Source
 
 ## 📏 Response Format (Mandatory)
 
@@ -77,7 +77,7 @@ After Phase 0, your response must look like:
 > Progress: 1/25 (4%) | Current: Phase 1 Deep Analysis
 > ```
 >
-> Project copied to `my-project-auto-opensource/`, XX files total. Original project will not be modified.
+> Project copied to `my-project-auto-convert-open-source/`, XX files total. Original project will not be modified.
 >
 > Starting deep analysis...
 > ````

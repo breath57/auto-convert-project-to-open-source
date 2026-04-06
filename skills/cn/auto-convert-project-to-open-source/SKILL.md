@@ -1,12 +1,12 @@
 ---
-name: all-project-auto-to-opensource
+name: auto-convert-project-to-open-source
 description: >
-  将任何内部/私有项目转化为生产级开源项目。
+  自动将任意内部/私有项目转化为生产级开源项目。
   触发词："open source", "开源", "开源化", "重构为开源项目", "prepare for open source"。
   支持任何语言、任何框架、任何项目类型。
 ---
 
-# 项目开源化 Skill
+# 自动转换项目为开源项目
 
 ## 📏 回复格式（硬性要求）
 
@@ -77,7 +77,7 @@ Phase 0 完成后你的回复必须像这样：
 > 进度：1/25 (4%) | 当前：Phase 1 深度分析
 > ```
 >
-> 项目已复制到 `my-project-auto-opensource/`，共 XX 个文件。原始项目不会被修改。
+> 项目已复制到 `my-project-auto-convert-open-source/`，共 XX 个文件。原始项目不会被修改。
 >
 > 正在开始深度分析...
 > ````

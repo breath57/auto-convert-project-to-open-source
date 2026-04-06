@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="logo.png" width="600" alt="自动开源转换 Skill" />
+  <img src="logo.png" width="600" alt="自动转换项目为开源项目" />
 </p>
 
-<h1 align="center">自动开源转换 Skill</h1>
+<h1 align="center">自动转换项目为开源项目</h1>
 
 <p align="center">
   <b>自动、轻松地转换任意项目为开源级别。</b>
@@ -82,7 +82,7 @@ flowchart LR
 ### 1. 安装
 
 ```bash
-npx skills add breath57/all-project-auto-to-opensource/skills/cn
+npx skills add breath57/auto-convert-project-to-open-source/skills/cn
 ```
 
 ### 2. 触发

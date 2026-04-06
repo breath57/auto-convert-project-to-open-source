@@ -4,7 +4,7 @@
 set -euo pipefail
 
 SRC_DIR="${1:-.}"
-SUFFIX="${2:-auto-opensource}"
+SUFFIX="${2:-auto-convert-open-source}"
 PROJECT_NAME=$(basename "$(cd "$SRC_DIR" && pwd)")
 TARGET_DIR="$(cd "$SRC_DIR" && pwd)/${PROJECT_NAME}-${SUFFIX}"
 
