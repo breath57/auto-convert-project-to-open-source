@@ -5,7 +5,7 @@
 <h1 align="center">all-project-auto-to-opensource</h1>
 
 <p align="center">
-  <b>Elevate any project to open-source quality — without the grind.</b>
+  <b>Automatically and easily convert any project to open-source grade.</b>
 </p>
 
 <p align="center">

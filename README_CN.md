@@ -5,7 +5,7 @@
 <h1 align="center">all-project-auto-to-opensource</h1>
 
 <p align="center">
-  <b>把任何项目轻松变为开源级别的项目。</b>
+  <b>自动、轻松地转换任意项目为开源级别。</b>
 </p>
 
 <p align="center">
