@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="logo.png" width="600" alt="all-project-auto-to-opensource" />
+  <img src="logo.png" width="600" alt="自动开源转换 Skill" />
 </p>
 
-<h1 align="center">all-project-auto-to-opensource</h1>
+<h1 align="center">自动开源转换 Skill</h1>
 
 <p align="center">
   <b>自动、轻松地转换任意项目为开源级别。</b>

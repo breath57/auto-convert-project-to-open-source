@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="logo.png" width="600" alt="all-project-auto-to-opensource" />
+  <img src="logo.png" width="600" alt="Auto Open-Source Convert Skill" />
 </p>
 
-<h1 align="center">all-project-auto-to-opensource</h1>
+<h1 align="center">Auto Open-Source Convert Skill</h1>
 
 <p align="center">
   <b>Automatically and easily convert any project to open-source grade.</b>
